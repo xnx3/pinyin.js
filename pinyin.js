@@ -431,7 +431,7 @@ var pinyin = {
     // 在对象中搜索
     arraySearch:function(l1, l2) {
         for (var name in pinyin.data) {
-			console.log(pinyin.data[name]);
+			//console.log(pinyin.data[name]);
             if (pinyin.data[name].indexOf(l1) != -1) {
                 return pinyin.ucfirst(name);
                 break;
