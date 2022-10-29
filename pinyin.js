@@ -1,5 +1,6 @@
 /**
  * 文字转拼音，参考网上资料整理、完善、修复。
+ * code : https://github.com/xnx3/pinyin.js
  * 工具：文字转16进制Unicode： http://www.msxindl.com/tools/unicode16.asp
  */
 var pinyin = {

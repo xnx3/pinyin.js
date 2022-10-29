@@ -4,7 +4,7 @@
 ## 使用方式
 
 ````
-<script src="https://res.zvo.cn/translate/translate.js"></script>
+<script src="https://res.zvo.cn/pinyin/pinyin.js"></script>
 <script>
 var str = pinyin.convert('你好')
 alert(str);
