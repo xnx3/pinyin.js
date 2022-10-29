@@ -1,3 +1,7 @@
+/**
+ * 文字转拼音，参考网上资料整理、完善、修复。
+ * 工具：文字转16进制Unicode： http://www.msxindl.com/tools/unicode16.asp
+ */
 var pinyin = {
     data:{
         "a": "\u554a\u963f\u9515",
@@ -82,7 +86,7 @@ var pinyin = {
         "feng": "\u4e30\u5c01\u67ab\u8702\u5cf0\u950b\u98ce\u75af\u70fd\u9022\u51af\u7f1d\u8bbd\u5949\u51e4\u4ff8\u9146\u8451\u6ca3\u781c",
         "fu": "\u592b\u6577\u80a4\u5b75\u6276\u62c2\u8f90\u5e45\u6c1f\u7b26\u4f0f\u4fd8\u670d\u6d6e\u6daa\u798f\u88b1\u5f17\u752b\u629a\u8f85\u4fef\u91dc\u65a7\u812f\u8151\u5e9c\u8150\u8d74\u526f\u8986\u8d4b\u590d\u5085\u4ed8\u961c\u7236\u8179\u8d1f\u5bcc\u8ba3\u9644\u5987\u7f1a\u5490\u5310\u51eb\u90db\u8299\u82fb\u832f\u83a9\u83d4\u544b\u5e5e\u6ecf\u8274\u5b5a\u9a78\u7ec2\u6874\u8d59\u9efb\u9efc\u7f58\u7a03\u99a5\u864d\u86a8\u8709\u8760\u876e\u9eb8\u8dba\u8dd7\u9cc6",
         "fo": "\u4f5b",
-        "fou": "\u5426",
+        "fou": "\u5426\u7f36",
         "ga": "\u5676\u560e\u86e4\u5c2c\u5477\u5c15\u5c1c\u65ee\u9486",
         "gai": "\u8be5\u6539\u6982\u9499\u76d6\u6e89\u4e10\u9654\u5793\u6224\u8d45\u80f2",
         "gan": "\u5e72\u7518\u6746\u67d1\u7aff\u809d\u8d76\u611f\u79c6\u6562\u8d63\u5769\u82f7\u5c34\u64c0\u6cd4\u6de6\u6f89\u7ec0\u6a44\u65f0\u77f8\u75b3\u9150",
@@ -401,7 +405,6 @@ var pinyin = {
         "cen": "\u5c91\u6d94",
         "diu": "\u94e5",
         "nou": "\u8028",
-        "fou": "\u7f36",
         "bia": "\u9adf"
     },
     // 转拼音
@@ -428,6 +431,7 @@ var pinyin = {
     // 在对象中搜索
     arraySearch:function(l1, l2) {
         for (var name in pinyin.data) {
+			console.log(pinyin.data[name]);
             if (pinyin.data[name].indexOf(l1) != -1) {
                 return pinyin.ucfirst(name);
                 break;
