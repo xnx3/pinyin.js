@@ -11,6 +11,10 @@ alert(str);
 </script>
 ````
 
+## 在线体验
+
+[https://res.zvo.cn/pinyin/demo.html](https://res.zvo.cn/pinyin/demo.html)
+
 ## 其他说明
 
 起初为 [自动写代码](https://github.com/xnx3/writecode) 系统做的一个配套支持，实现也是网上找的，自己进行了完善优化，然后发现都整理好了，不发出来有点浪费，于是乎...
