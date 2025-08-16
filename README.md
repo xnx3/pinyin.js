@@ -1,25 +1,43 @@
-½«ÖĞÎÄ×ªÎªÆ´Òô¡£  
-²»ÒÀÀµÈÎºÎÈı·½¿â£¬¼¸KBÔ­ÉújsÊµÏÖ£¬ÓĞÁ¼ºÃµÄ¼æÈİĞÔ£¬²»ÌôÔËĞĞ»·¾³¡£
+å°†ä¸­æ–‡è½¬ä¸ºæ‹¼éŸ³ã€‚  
+ä¸ä¾èµ–ä»»ä½•ä¸‰æ–¹åº“ï¼Œåªéœ€å¼•å…¥å‡ KBå³å¯å®ç°ï¼Œæœ‰è‰¯å¥½çš„å…¼å®¹æ€§ï¼Œä¸æŒ‘è¿è¡Œç¯å¢ƒã€‚
 
-## Ê¹ÓÃ·½Ê½
+
+## åœ¨çº¿ä½“éªŒ
+
+[https://res.zvo.cn/pinyin/demo.html](https://res.zvo.cn/pinyin/demo.html)
+
+
+## JavaScript ä½¿ç”¨
 
 ````
 <script src="https://res.zvo.cn/pinyin/pinyin.js"></script>
 <script>
-var str = pinyin.convert('ÄãºÃ')
-alert(str);
+console.log(pinyin.convert('ä½ å¥½'));
 </script>
 ````
 
-## ÔÚÏßÌåÑé
+## JavaSDK
+å®ƒæä¾›äº†javaä¸­ä½¿ç”¨çš„èƒ½åŠ›  
 
-[https://res.zvo.cn/pinyin/demo.html](https://res.zvo.cn/pinyin/demo.html)
+#### 1. maven å¼•å…¥
+````
+<dependency>
+    <groupId>cn.zvo.translate</groupId>
+    <artifactId>chinese.to.pinyin</artifactId>
+    <version>2.0</version>
+</dependency>
+````
 
-## ÆäËûËµÃ÷
+#### 2. ä½¿ç”¨
+````
+System.out.println(Pinyin.convert("ä½ å¥½"));
+````
 
-Æğ³õÎª [×Ô¶¯Ğ´´úÂë](https://github.com/xnx3/writecode) ÏµÍ³×öµÄÒ»¸öÅäÌ×Ö§³Ö£¬ÊµÏÖÒ²ÊÇÍøÉÏÕÒµÄ£¬×Ô¼º½øĞĞÁËÍêÉÆÓÅ»¯£¬È»ºó·¢ÏÖ¶¼ÕûÀíºÃÁË£¬²»·¢³öÀ´ÓĞµãÀË·Ñ£¬ÓÚÊÇºõ...
+## å…¶ä»–è¯´æ˜
 
-## ÁªÏµ·½Ê½
-ÕûÀíÍêÉÆÕß£º¹ÜÀ×Ãù  
-Î¢ĞÅ£ºxnx3com  
-½»Á÷QQÈº£º279789411
+èµ·åˆä¸º [è‡ªåŠ¨å†™ä»£ç ](https://github.com/xnx3/writecode) ç³»ç»Ÿåšçš„ä¸€ä¸ªé…å¥—æ”¯æŒï¼Œå®ç°ä¹Ÿæ˜¯ç½‘ä¸Šæ‰¾çš„ï¼Œè‡ªå·±è¿›è¡Œäº†å®Œå–„ä¼˜åŒ–ï¼Œç„¶åå‘ç°éƒ½æ•´ç†å¥½äº†ï¼Œä¸å‘å‡ºæ¥æœ‰ç‚¹æµªè´¹ï¼Œäºæ˜¯ä¹...
+
+## è”ç³»æ–¹å¼
+æ•´ç†å®Œå–„è€…ï¼šç®¡é›·é¸£  
+å¾®ä¿¡ï¼šxnx3com  
+äº¤æµQQç¾¤ï¼š279789411
